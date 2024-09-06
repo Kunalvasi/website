@@ -1,0 +1,135 @@
+/* Base styles for the App */
+*{
+  margin: 0;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  /* Fixed position to keep it at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Ensures Navbar is on top */
+}
+
+/* Container to hold Sidebar and main content */
+.app-container {
+  display: flex;
+  margin-top: 60px;
+  /* Adjust based on Navbar height */
+  flex: 1;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  /* Example background color */
+}
+
+/* Footer styles */
+.footer {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  padding: 2rem 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.1);
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffeb3b;
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffeb3b;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .footer-social {
+    margin-top: 1rem;
+  }
+}

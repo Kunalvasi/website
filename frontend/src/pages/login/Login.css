@@ -1,0 +1,165 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+/* Login Page Background */
+.login-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    /* Updated gradient background for a modern look */
+}
+
+/* Login Container */
+.login-container {
+    background-color: #ffffff;
+    padding: 3rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    /* Added z-index for layer management */
+}
+
+/* Header Styles */
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: 600;
+    /* Slightly bolder and larger text */
+}
+
+/* Input Field Styles */
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.input-group input:focus {
+    border-color: #0072ff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 114, 255, 0.2);
+    /* Added box-shadow for a more interactive feel */
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+    /* Darker color and slight elevation effect on hover */
+}
+
+/* Social Login Section */
+.social-login {
+    margin-top: 1.5rem;
+}
+
+.social-login p {
+    margin-bottom: 1rem;
+    color: #888;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons a {
+    display: inline-block;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    margin: 0 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a.facebook {
+    background-color: #3b5998;
+}
+
+.social-icons a.google {
+    background-color: #db4437;
+}
+
+.social-icons a.linkedin {
+    background-color: #0077b5;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    /* Slight scale effect on hover */
+}
+
+/* Signup Text */
+.signup-text {
+    margin-top: 1.5rem;
+    color: #888;
+}
+
+.signup-text a {
+    color: #0072ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 2rem;
+    }
+}
